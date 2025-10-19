@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мой Ежедневник</title>
+    <!-- Подключаем наши файлы со стилями и скриптами -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Шапка сайта -->
+    <header>
+        <h1>📖 Мой Ежедневник</h1>
+    </header>
+
+    <!-- Основное содержимое -->
+    <main>
+        <!-- Форма для добавления новой задачи -->
+        <form id="taskForm">
+            <label for="title">Название задачи:</label>
+            <input type="text" id="title" name="title" required placeholder="Например: Выучить HTML">
+            
+            <label for="description">Описание (необязательно):</label>
+            <textarea id="description" name="description" placeholder="Подробности..."></textarea>
+            
+            <button type="submit">Добавить задачу</button>
+        </form>
+
+        <!-- Сюда будут добавляться созданные задачи -->
+        <ul id="taskList"></ul>
+    </main>
+
+    <!-- Подключаем JavaScript в конце тела, чтобы он загрузился после HTML -->
+    <script src="script.js"></script>
+</body>
+</html>
